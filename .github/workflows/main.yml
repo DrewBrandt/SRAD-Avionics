@@ -24,7 +24,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.TEST }}  # Use organization token
         run: |
-          project_name="Your Project Name"  # Replace with the actual project name or keyword
+          project_name="@DrewBrandt's test project"  # Replace with the actual project name or keyword
           project_id=$(gh api graphql -f query='
           query {
             organization(login: "your-org") {
