@@ -19,10 +19,105 @@ jobs:
           echo "PR Event: ${{ github.event.action }}"
           echo "PR Review State: ${{ github.event.pull_request_review.state }}"
 
-      # Step 1: Get all linked issues
-      - name: Fetch Linked Issues
+      # Step 1: Get the project ID dynamically
+      - name: Fetch Project ID
+        env:
+          GH_TOKEN: ${{ secrets.TEST }}  # Use organization token
+        run: |
+          project_name="Your Project Name"  # Replace with the actual project name or keyword
+          project_id=$(gh api graphql -f query='
+          query {
+            organization(login: "your-org") {
+              projectsV2(first: 10) {
+                nodes {
+                  id
+                  title
+                }
+              }
+            }
+          }' --jq '.data.organization.projectsV2.nodes[] | select(.title == "'$project_name'") | .id')
+
+          echo "PROJECT_ID=$project_id" >> $GITHUB_ENV
+          echo "Project ID: $project_id"
+
+      # Step 2: Fetch the Status Field ID and Option IDs
+      - name: Fetch Status Field ID and Option IDs
         env:
           GH_TOKEN: ${{ secrets.TEST }}
+          PROJECT_ID: ${{ env.PROJECT_ID }}
+        run: |
+          status_field_name="Status"  # Replace with the actual name of the status field
+          ready_status_name="Ready"
+          requires_changes_status_name="Requires Changes"
+
+          # Fetch the Status Field ID
+          status_field_id=$(gh api graphql -f query='
+          query($projectId: ID!) {
+            node(id: $projectId) {
+              ... on ProjectV2 {
+                fields(first: 10) {
+                  nodes {
+                    id
+                    name
+                    options {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }' -f projectId=$PROJECT_ID --jq '.data.node.fields.nodes[] | select(.name == "'$status_field_name'") | .id')
+
+          echo "STATUS_FIELD_ID=$status_field_id" >> $GITHUB_ENV
+          echo "Status Field ID: $status_field_id"
+
+          # Fetch the Option IDs for "Ready" and "Requires Changes"
+          ready_option_id=$(gh api graphql -f query='
+          query($projectId: ID!) {
+            node(id: $projectId) {
+              ... on ProjectV2 {
+                fields(first: 10) {
+                  nodes {
+                    options {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }' -f projectId=$PROJECT_ID --jq '.data.node.fields.nodes[] | select(.name == "'$status_field_name'").options[] | select(.name == "'$ready_status_name'") | .id')
+
+          requires_changes_option_id=$(gh api graphql -f query='
+          query($projectId: ID!) {
+            node(id: $projectId) {
+              ... on ProjectV2 {
+                fields(first: 10) {
+                  nodes {
+                    options {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }' -f projectId=$PROJECT_ID --jq '.data.node.fields.nodes[] | select(.name == "'$status_field_name'").options[] | select(.name == "'$requires_changes_status_name'") | .id')
+
+          echo "READY_OPTION_ID=$ready_option_id" >> $GITHUB_ENV
+          echo "REQUIRES_CHANGES_OPTION_ID=$requires_changes_option_id" >> $GITHUB_ENV
+          echo "Ready Option ID: $ready_option_id"
+          echo "Requires Changes Option ID: $requires_changes_option_id"
+
+      # Step 3: Fetch linked issues and update their status
+      - name: Fetch Linked Issues and Set Status
+        env:
+          GH_TOKEN: ${{ secrets.TEST }}
+          PROJECT_ID: ${{ env.PROJECT_ID }}
+          STATUS_FIELD_ID: ${{ env.STATUS_FIELD_ID }}
+          READY_OPTION_ID: ${{ env.READY_OPTION_ID }}
+          REQUIRES_CHANGES_OPTION_ID: ${{ env.REQUIRES_CHANGES_OPTION_ID }}
         run: |
           # Retrieve the linked issues using GraphQL
           linked_issues=$(gh api graphql -f query='
@@ -58,23 +153,12 @@ jobs:
           # Print the collected issue IDs for debugging
           echo "Collected Linked Issue IDs: $all_linked_issues"
 
-          # Save the list of issue IDs to the environment for the next steps
-          echo "ALL_LINKED_ISSUE_IDS=$all_linked_issues" >> $GITHUB_ENV
-
-
-      # Step 2: Set status based on PR event
-      - name: Set Status for Linked Issues
-        env:
-          GH_TOKEN: ${{ secrets.TEST }}
-          PROJECT_ID: PVT_kwHOCXMlSM4Ap8fI  # Replace with your Project ID
-          STATUS_FIELD_ID: PVTSSF_lAHOCXMlSM4Ap8fIzghRdVc  # Replace with your Status Field ID
-        run: |
           # Determine the correct status based on the event type
           if [[ "${{ github.event.action }}" == "opened" ]] || [[ "${{ github.event.action }}" == "review_requested" ]] || [[ "${{ github.event.action }}" == "reopened" ]]; then
-            status_option_id="96a49a79"  # Option ID for "Ready"
+            status_option_id=$READY_OPTION_ID
             echo "Setting status to 'Ready'"
           elif [[ "${{ github.event.pull_request_review.state }}" == "changes_requested" ]]; then
-            status_option_id="d73ac60e"  # Option ID for "Requires Changes"
+            status_option_id=$REQUIRES_CHANGES_OPTION_ID
             echo "Setting status to 'Requires Changes'"
           else
             echo "No valid event type for status update."
@@ -82,7 +166,7 @@ jobs:
           fi
 
           # Loop through each linked issue and update the status
-          for issue_id in $ALL_LINKED_ISSUE_IDS; do
+          for issue_id in $all_linked_issues; do
             if [ -n "$issue_id" ]; then
               echo "Updating status for issue ID: $issue_id"
               gh api graphql -f query='
