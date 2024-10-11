@@ -28,13 +28,13 @@ jobs:
           project_name="@DrewBrandt's test project"  # Replace with the actual project name
           project_id=$(gh api graphql -f query='
             query {
-              organization(login: $login) {
+             # organization(login: $login) {
                 projectsV2(first: 10) {
                   nodes {
                      id
                      title
                    }
-                 }
+                # }
                }
              }' --jq '.data.organization.projectsV2.nodes[] | select(.title == "'"$project_name"'") | .id')
 
