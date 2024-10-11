@@ -59,11 +59,13 @@ jobs:
               ... on ProjectV2 {
                 fields(first: 10) {
                   nodes {
+                  ... on ProjectV2SingleSelectField {
                     id
                     name
                     options {
                       id
                       name
+                      }
                     }
                   }
                 }
@@ -81,9 +83,11 @@ jobs:
               ... on ProjectV2 {
                 fields(first: 10) {
                   nodes {
+                  ... on ProjectV2SingleSelectField {
                     options {
                       id
                       name
+                      }
                     }
                   }
                 }
@@ -97,10 +101,12 @@ jobs:
               ... on ProjectV2 {
                 fields(first: 10) {
                   nodes {
+                  ... on ProjectV2SingleSelectField {
                     options {
                       id
                       name
                     }
+                  }
                   }
                 }
               }
