@@ -24,21 +24,23 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.TEST }}  # Use organization token
         run: |
-          project_name="@DrewBrandt's test project"  # Replace with the actual project name or keyword
+          # Correctly set the project name and retrieve the project ID dynamically
+          project_name="@DrewBrandt's test project"  # Replace with the actual project name
           project_id=$(gh api graphql -f query='
-          query {
-            organization(login: "your-org") {
-              projectsV2(first: 10) {
-                nodes {
-                  id
-                  title
-                }
-              }
-            }
-          }' --jq '.data.organization.projectsV2.nodes[] | select(.title == "'$project_name'") | .id')
+            query($login: String!) {
+              organization(login: $login) {
+                projectsV2(first: 10) {
+                  nodes {
+                     id
+                     title
+                   }
+                 }
+               }
+             }' -f login="your-org" --jq '.data.organization.projectsV2.nodes[] | select(.title == "'"$project_name"'") | .id')
 
-          echo "PROJECT_ID=$project_id" >> $GITHUB_ENV
-          echo "Project ID: $project_id"
+           # Print the retrieved project ID and save it to the environment for future steps
+           echo "PROJECT_ID=$project_id" >> $GITHUB_ENV
+           echo "Project ID: $project_id"
 
       # Step 2: Fetch the Status Field ID and Option IDs
       - name: Fetch Status Field ID and Option IDs
