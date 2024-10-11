@@ -27,7 +27,7 @@ jobs:
           # Correctly set the project name and retrieve the project ID dynamically
           project_name="@DrewBrandt's test project"  # Replace with the actual project name
           project_id=$(gh api graphql -f query='
-            query($login: String!) {
+            query {
               organization(login: $login) {
                 projectsV2(first: 10) {
                   nodes {
@@ -36,7 +36,7 @@ jobs:
                    }
                  }
                }
-             }' -f login="your-org" --jq '.data.organization.projectsV2.nodes[] | select(.title == "'"$project_name"'") | .id')
+             }' --jq '.data.organization.projectsV2.nodes[] | select(.title == "'"$project_name"'") | .id')
 
            # Print the retrieved project ID and save it to the environment for future steps
            echo "PROJECT_ID=$project_id" >> $GITHUB_ENV
