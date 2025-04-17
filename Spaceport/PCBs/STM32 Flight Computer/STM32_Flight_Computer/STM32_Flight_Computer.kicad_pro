@@ -388,6 +388,30 @@
     [
       "0f7e02ee-5e4c-4ec0-84f8-a7bba184df93",
       "Root"
+    ],
+    [
+      "5d651e38-a7dc-4342-969a-b6f017c5f9b1",
+      "GPS"
+    ],
+    [
+      "708e72b5-567a-4ae9-b90c-bbeeb36374b5",
+      "IMU"
+    ],
+    [
+      "6385d2e5-860d-4872-95dc-7fa1940dbd05",
+      "Barometer"
+    ],
+    [
+      "7d2cbe0d-15b7-466f-bdab-10a40a68bdc6",
+      "USB_C"
+    ],
+    [
+      "748075e2-50a9-492c-95a3-d7c06a174467",
+      "BT"
+    ],
+    [
+      "2aca3e4b-4d29-4355-8996-506bf00665c0",
+      "Magnometer"
     ]
   ],
   "text_variables": {}
