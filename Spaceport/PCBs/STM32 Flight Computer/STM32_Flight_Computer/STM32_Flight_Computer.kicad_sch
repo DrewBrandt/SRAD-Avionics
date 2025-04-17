@@ -2248,7 +2248,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "U4"
 				(at 20.32 10.16 0)
 				(effects
 					(font
@@ -2265,7 +2265,7 @@
 				)
 			)
 			(property "Footprint" "QFN_M-M8Q_UBL"
-				(at 0 0 0)
+				(at -2.286 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2368,10 +2368,12 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "SAM-M8Q_1_1"
 				(pin power_out line
 					(at 0 0 0)
 					(length 7.62)
-					(name "1"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2389,7 +2391,7 @@
 				(pin power_out line
 					(at 0 -22.86 0)
 					(length 7.62)
-					(name "10"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2407,7 +2409,7 @@
 				(pin power_out line
 					(at 40.64 -22.86 180)
 					(length 7.62)
-					(name "11"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2425,7 +2427,7 @@
 				(pin unspecified line
 					(at 40.64 -20.32 180)
 					(length 7.62)
-					(name "12"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2443,7 +2445,7 @@
 				(pin unspecified line
 					(at 40.64 -17.78 180)
 					(length 7.62)
-					(name "13"
+					(name "TXD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2461,7 +2463,7 @@
 				(pin unspecified line
 					(at 40.64 -15.24 180)
 					(length 7.62)
-					(name "14"
+					(name "RXD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2479,7 +2481,7 @@
 				(pin power_out line
 					(at 40.64 -12.7 180)
 					(length 7.62)
-					(name "15"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2497,7 +2499,7 @@
 				(pin power_out line
 					(at 40.64 -10.16 180)
 					(length 7.62)
-					(name "16"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2515,7 +2517,7 @@
 				(pin power_in line
 					(at 40.64 -7.62 180)
 					(length 7.62)
-					(name "17"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2533,7 +2535,7 @@
 				(pin unspecified line
 					(at 40.64 -5.08 180)
 					(length 7.62)
-					(name "18"
+					(name "RESET_IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2551,7 +2553,7 @@
 				(pin unspecified line
 					(at 40.64 -2.54 180)
 					(length 7.62)
-					(name "19"
+					(name "EXTINT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2569,7 +2571,7 @@
 				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
-					(name "2"
+					(name "VCC_IO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2587,7 +2589,7 @@
 				(pin power_out line
 					(at 40.64 0 180)
 					(length 7.62)
-					(name "20"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2605,7 +2607,7 @@
 				(pin unspecified line
 					(at 0 -5.08 0)
 					(length 7.62)
-					(name "3"
+					(name "V_BCKP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2623,7 +2625,7 @@
 				(pin power_out line
 					(at 0 -7.62 0)
 					(length 7.62)
-					(name "4"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2641,7 +2643,7 @@
 				(pin power_out line
 					(at 0 -10.16 0)
 					(length 7.62)
-					(name "5"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2659,7 +2661,7 @@
 				(pin power_out line
 					(at 0 -12.7 0)
 					(length 7.62)
-					(name "6"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2677,7 +2679,7 @@
 				(pin unspecified line
 					(at 0 -15.24 0)
 					(length 7.62)
-					(name "7"
+					(name "TIMEPULSE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2695,7 +2697,7 @@
 				(pin unspecified line
 					(at 0 -17.78 0)
 					(length 7.62)
-					(name "8"
+					(name "SAFEBOOT_IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2713,7 +2715,7 @@
 				(pin unspecified line
 					(at 0 -20.32 0)
 					(length 7.62)
-					(name "9"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6209,7 +6211,7 @@
 	)
 	(symbol
 		(lib_id "SRAD_AVIONICS:STM32H7A3ZIT6")
-		(at 39.37 77.47 0)
+		(at 34.29 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6218,7 +6220,7 @@
 		(fields_autoplaced yes)
 		(uuid "69e47de9-5e67-4485-9821-b32ea59a9a05")
 		(property "Reference" "U5"
-			(at 69.85 67.31 0)
+			(at 64.77 67.31 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6226,7 +6228,7 @@
 			)
 		)
 		(property "Value" "STM32H7A3ZIT6"
-			(at 69.85 69.85 0)
+			(at 64.77 69.85 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6234,7 +6236,7 @@
 			)
 		)
 		(property "Footprint" "LQFP-144"
-			(at 39.37 77.47 0)
+			(at 34.29 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6246,7 @@
 			)
 		)
 		(property "Datasheet" "STM32H7A3ZIT6"
-			(at 39.37 77.47 0)
+			(at 34.29 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6254,7 +6256,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 77.47 0)
+			(at 34.29 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6805,7 +6807,7 @@
 	)
 	(symbol
 		(lib_id "SRAD_AVIONICS:USB4105-GF-A-060")
-		(at 137.16 133.35 0)
+		(at 260.35 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6814,7 +6816,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d124efb-6fcc-4d58-8e2b-88d631faee65")
 		(property "Reference" "J1"
-			(at 137.16 115.57 0)
+			(at 260.35 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6822,7 +6824,7 @@
 			)
 		)
 		(property "Value" "USB4105-GF-A-060"
-			(at 137.16 118.11 0)
+			(at 260.35 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6830,7 +6832,7 @@
 			)
 		)
 		(property "Footprint" "USB4105-GF-A-060:GCT_USB4105-GF-A-060"
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,7 +6842,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6849,7 +6851,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6858,7 +6860,7 @@
 			)
 		)
 		(property "PARTREV" "B3"
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6868,7 +6870,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Global Connector Technology"
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6878,7 +6880,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "3.31mm"
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6888,7 +6890,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 137.16 133.35 0)
+			(at 260.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7278,7 +7280,7 @@
 			)
 		)
 		(property "Footprint" "QFN_M-M8Q_UBL"
-			(at 175.26 67.31 0)
+			(at 172.974 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
