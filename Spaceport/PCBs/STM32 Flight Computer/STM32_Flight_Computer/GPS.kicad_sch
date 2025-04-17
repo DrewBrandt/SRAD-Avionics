@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "493c16ea-d53b-4e32-91c9-ea8a7bef2e00")
+	(uuid "cbd2d98c-1ff4-482d-b83d-c94964f4f367")
 	(paper "A4")
 	(lib_symbols
 		(symbol "SRAD_AVIONICS:SAM-M8Q"

@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "92f28c42-5be1-402a-a6a9-8995025d94fd")
+	(uuid "94fff8be-78f0-4e16-8f9e-5c6bb7d48aee")
 	(paper "A4")
 	(lib_symbols
 		(symbol "SRAD_AVIONICS:ESP32-H2-MINI-1-N4"

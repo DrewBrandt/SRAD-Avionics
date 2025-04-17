@@ -2872,8 +2872,8 @@
 		(uuid 4251994e-d365-4501-a908-49e4a20a659d)
 	)
 	(rectangle
-		(start -201.93 8.89)
-		(end -48.26 107.95)
+		(start -102.87 172.72)
+		(end -3.81 19.05)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -2899,7 +2899,7 @@
 	)
 	(text "SENSORS"
 		(exclude_from_sim no)
-		(at -132.842 3.302 0)
+		(at -44.704 13.716 0)
 		(effects
 			(font
 				(face "Consolas")
@@ -2907,7 +2907,7 @@
 				(thickness 1)
 				(bold yes)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b5e5e0e6-81e0-4086-b18f-3289c4a6c033")
 	)
@@ -3663,8 +3663,8 @@
 		)
 	)
 	(sheet
-		(at -99.06 62.23)
-		(size 44.45 39.37)
+		(at -49.53 25.4)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3675,7 +3675,7 @@
 		)
 		(uuid "2aca3e4b-4d29-4355-8996-506bf00665c0")
 		(property "Sheetname" "Magnometer"
-			(at -99.06 61.5184 0)
+			(at -49.53 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,7 +3684,7 @@
 			)
 		)
 		(property "Sheetfile" "Magnometer.kicad_sch"
-			(at -99.06 102.1846 0)
+			(at -49.53 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3701,8 +3701,8 @@
 		)
 	)
 	(sheet
-		(at -99.06 15.24)
-		(size 44.45 39.37)
+		(at -96.52 25.4)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3713,7 +3713,7 @@
 		)
 		(uuid "5d651e38-a7dc-4342-969a-b6f017c5f9b1")
 		(property "Sheetname" "GPS"
-			(at -99.06 14.5284 0)
+			(at -96.52 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3722,7 @@
 			)
 		)
 		(property "Sheetfile" "GPS.kicad_sch"
-			(at -99.06 55.1946 0)
+			(at -96.52 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3739,8 +3739,8 @@
 		)
 	)
 	(sheet
-		(at -147.32 62.23)
-		(size 44.45 39.37)
+		(at -49.53 74.93)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3751,7 +3751,7 @@
 		)
 		(uuid "6385d2e5-860d-4872-95dc-7fa1940dbd05")
 		(property "Sheetname" "Barometer"
-			(at -147.32 61.5184 0)
+			(at -49.53 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3760,7 @@
 			)
 		)
 		(property "Sheetfile" "Barometer.kicad_sch"
-			(at -147.32 102.1846 0)
+			(at -49.53 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3777,8 +3777,8 @@
 		)
 	)
 	(sheet
-		(at -147.32 15.24)
-		(size 44.45 39.37)
+		(at -96.52 74.93)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3789,7 +3789,7 @@
 		)
 		(uuid "708e72b5-567a-4ae9-b90c-bbeeb36374b5")
 		(property "Sheetname" "IMU"
-			(at -147.32 14.5284 0)
+			(at -96.52 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3798,7 +3798,7 @@
 			)
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
-			(at -147.32 55.1946 0)
+			(at -96.52 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,8 +3815,8 @@
 		)
 	)
 	(sheet
-		(at -196.85 62.23)
-		(size 44.45 39.37)
+		(at -49.53 124.46)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3827,7 +3827,7 @@
 		)
 		(uuid "748075e2-50a9-492c-95a3-d7c06a174467")
 		(property "Sheetname" "BT"
-			(at -196.85 61.5184 0)
+			(at -49.53 123.7484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,7 +3836,7 @@
 			)
 		)
 		(property "Sheetfile" "BT.kicad_sch"
-			(at -196.85 102.1846 0)
+			(at -49.53 169.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3853,8 +3853,8 @@
 		)
 	)
 	(sheet
-		(at -196.85 15.24)
-		(size 44.45 39.37)
+		(at -96.52 124.46)
+		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3865,7 +3865,7 @@
 		)
 		(uuid "7d2cbe0d-15b7-466f-bdab-10a40a68bdc6")
 		(property "Sheetname" "USB_C"
-			(at -196.85 14.5284 0)
+			(at -96.52 123.7484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3874,7 +3874,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_C.kicad_sch"
-			(at -196.85 55.1946 0)
+			(at -96.52 169.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
