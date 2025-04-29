@@ -353,7 +353,7 @@
 	)
 	(symbol
 		(lib_id "SRAD_AVIONICS:LIS3MDLTR")
-		(at 118.11 72.39 0)
+		(at 113.03 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -362,7 +362,7 @@
 		(fields_autoplaced yes)
 		(uuid "d268239b-7db7-49a0-bd05-7ee717b44e63")
 		(property "Reference" "U3"
-			(at 148.59 62.23 0)
+			(at 143.51 86.36 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -370,7 +370,7 @@
 			)
 		)
 		(property "Value" "LIS3MDLTR"
-			(at 148.59 64.77 0)
+			(at 143.51 88.9 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -378,7 +378,7 @@
 			)
 		)
 		(property "Footprint" "LGA-12_2X2X1_STM"
-			(at 118.11 72.39 0)
+			(at 113.03 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -388,7 +388,7 @@
 			)
 		)
 		(property "Datasheet" "LIS3MDLTR"
-			(at 118.11 72.39 0)
+			(at 113.03 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -398,7 +398,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 118.11 72.39 0)
+			(at 113.03 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)

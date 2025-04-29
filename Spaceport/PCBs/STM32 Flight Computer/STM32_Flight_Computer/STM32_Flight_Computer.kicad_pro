@@ -395,7 +395,7 @@
     ],
     [
       "708e72b5-567a-4ae9-b90c-bbeeb36374b5",
-      "IMU"
+      "IMU_24g"
     ],
     [
       "6385d2e5-860d-4872-95dc-7fa1940dbd05",
@@ -406,12 +406,16 @@
       "USB_C"
     ],
     [
-      "748075e2-50a9-492c-95a3-d7c06a174467",
-      "BT"
+      "b3a01b16-e8b3-4286-81fe-a4c8b29d39ee",
+      "IMU_400g"
     ],
     [
       "2aca3e4b-4d29-4355-8996-506bf00665c0",
       "Magnometer"
+    ],
+    [
+      "9dd0cc19-f973-442d-b00f-ebe8e4ec4757",
+      "LoRa_RFIC"
     ]
   ],
   "text_variables": {}

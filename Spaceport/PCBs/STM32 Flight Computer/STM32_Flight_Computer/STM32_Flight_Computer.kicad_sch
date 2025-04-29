@@ -2872,8 +2872,20 @@
 		(uuid 4251994e-d365-4501-a908-49e4a20a659d)
 	)
 	(rectangle
-		(start -102.87 172.72)
-		(end -3.81 19.05)
+		(start 303.53 19.05)
+		(end 401.32 175.26)
+		(stroke
+			(width 0.3)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c72a1b91-a65b-4355-b4ff-69f8e75cd865)
+	)
+	(rectangle
+		(start -102.87 19.05)
+		(end -3.81 175.26)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -2896,6 +2908,20 @@
 			(justify left)
 		)
 		(uuid "1b054356-3f1d-4bcf-9b8d-54a2b45949b5")
+	)
+	(text "SENSORS"
+		(exclude_from_sim no)
+		(at 358.394 12.7 0)
+		(effects
+			(font
+				(face "Consolas")
+				(size 3 3)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "523d7f8b-6366-440e-90c8-c04455126ed9")
 	)
 	(text "SENSORS"
 		(exclude_from_sim no)
@@ -3739,7 +3765,7 @@
 		)
 	)
 	(sheet
-		(at -49.53 74.93)
+		(at -50.8 124.46)
 		(size 39.37 44.45)
 		(fields_autoplaced yes)
 		(stroke
@@ -3751,7 +3777,7 @@
 		)
 		(uuid "6385d2e5-860d-4872-95dc-7fa1940dbd05")
 		(property "Sheetname" "Barometer"
-			(at -49.53 74.2184 0)
+			(at -50.8 123.7484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3786,7 @@
 			)
 		)
 		(property "Sheetfile" "Barometer.kicad_sch"
-			(at -49.53 119.9646 0)
+			(at -50.8 169.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +3814,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "708e72b5-567a-4ae9-b90c-bbeeb36374b5")
-		(property "Sheetname" "IMU"
+		(property "Sheetname" "IMU_24g"
 			(at -96.52 74.2184 0)
 			(effects
 				(font
@@ -3810,44 +3836,6 @@
 			(project "STM32_Flight_Computer"
 				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at -49.53 124.46)
-		(size 39.37 44.45)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "748075e2-50a9-492c-95a3-d7c06a174467")
-		(property "Sheetname" "BT"
-			(at -49.53 123.7484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "BT.kicad_sch"
-			(at -49.53 169.4946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "STM32_Flight_Computer"
-				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93"
-					(page "6")
 				)
 			)
 		)
@@ -3886,6 +3874,82 @@
 			(project "STM32_Flight_Computer"
 				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 308.61 24.13)
+		(size 39.37 44.45)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9dd0cc19-f973-442d-b00f-ebe8e4ec4757")
+		(property "Sheetname" "LoRa_RFIC"
+			(at 308.61 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LoRa_RFIC.kicad_sch"
+			(at 308.61 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32_Flight_Computer"
+				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at -50.8 74.93)
+		(size 39.37 44.45)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3a01b16-e8b3-4286-81fe-a4c8b29d39ee")
+		(property "Sheetname" "IMU_400g"
+			(at -50.8 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMU_400g.kicad_sch"
+			(at -50.8 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32_Flight_Computer"
+				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93"
+					(page "6")
 				)
 			)
 		)
