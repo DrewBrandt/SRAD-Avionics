@@ -2909,7 +2909,7 @@
 		)
 		(uuid "1b054356-3f1d-4bcf-9b8d-54a2b45949b5")
 	)
-	(text "SENSORS"
+	(text "RF"
 		(exclude_from_sim no)
 		(at 358.394 12.7 0)
 		(effects
