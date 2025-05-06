@@ -6752,6 +6752,17 @@
 		)
 		(uuid "032731fc-4cad-404c-8cbc-a539d69ab4a3")
 	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 34.036 78.486 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5702/USB4105%20-%20Product%20Drawing.pdf")
+		)
+		(uuid "14b23350-708c-4362-a80a-7d1a11b5ce7f")
+	)
 	(text "SMA Antenna\n"
 		(exclude_from_sim no)
 		(at 198.12 68.58 0)
@@ -6788,6 +6799,28 @@
 		)
 		(uuid "2e0b4599-dc3f-48ad-a946-829b72d498e3")
 	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 75.692 88.646 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf")
+		)
+		(uuid "33ee0516-6b6b-4414-94ec-a4bdf298f5cf")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 243.586 122.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/642/XC6220.pdf")
+		)
+		(uuid "4a7d8e96-5e0d-4e81-a0a2-bc7e5857551d")
+	)
 	(text "Power Switch\n"
 		(exclude_from_sim no)
 		(at 213.36 146.05 0)
@@ -6810,6 +6843,28 @@
 			(justify left bottom)
 		)
 		(uuid "5185f215-70ce-436a-a726-d6c0b2a2566b")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 160.02 25.654 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf")
+		)
+		(uuid "5e78bf58-9d9b-41de-96b7-e73b737284b6")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 82.804 27.432 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://gct.co/files/drawings/mem2085.pdf")
+		)
+		(uuid "62db5e86-68dc-4be1-96ca-52508dccfb9a")
 	)
 	(text "3.3v Linear Regulator"
 		(exclude_from_sim no)
@@ -6847,6 +6902,17 @@
 		)
 		(uuid "8be4a680-028a-40c1-8804-cea440647b16")
 	)
+	(text "Datasheet - Switch\n"
+		(exclude_from_sim no)
+		(at 207.01 110.998 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5735/50-0118-00.pdf")
+		)
+		(uuid "9379c3be-b242-4d7b-915b-b3341e001f27")
+	)
 	(text "ESD Protection\n"
 		(exclude_from_sim no)
 		(at 73.66 109.22 0)
@@ -6856,6 +6922,28 @@
 			)
 		)
 		(uuid "9a0f367b-8fd5-4281-8c4d-e676dce59108")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 200.152 26.416 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.murata.com/-/media/webrenewal/products/connectivitymodule/lpwa/overview/lineup/pdf/type2gt.ashx?la=en-us&cvid=20240605010000000000")
+		)
+		(uuid "aa7ed772-b70e-433c-b149-cb209e42ed67")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 160.782 119.126 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.ti.com/lit/ds/symlink/bq25185.pdf?ts=1701339761812&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25185")
+		)
+		(uuid "db89ebdf-9ff0-44bd-a3e4-4f92a5989d2d")
 	)
 	(text "Power and Batteries"
 		(exclude_from_sim no)
@@ -6869,6 +6957,28 @@
 			(justify left bottom)
 		)
 		(uuid "e9f8b7fc-47e0-41c2-81da-2d3ad2f58fff")
+	)
+	(text "Datasheet"
+		(exclude_from_sim no)
+		(at 205.74 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps22917")
+		)
+		(uuid "f64a4746-170a-40ef-84f7-9f1fbbea2d8e")
+	)
+	(text "Datasheet - LR1121"
+		(exclude_from_sim no)
+		(at 226.568 26.416 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/RQ0000093ZiP/RV4Ba6LROsFrFjnAAVK2av5W11RGmCms_3Q2cyKHdDA")
+		)
+		(uuid "fab49497-74c3-4d2f-8a91-81ae9e64b9c0")
 	)
 	(junction
 		(at 254 53.34)
@@ -17290,7 +17400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
 			(at 199.39 44.45 0)
 			(effects
 				(font
