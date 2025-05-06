@@ -636,10 +636,6 @@
 		(at 128.27 90.17)
 		(uuid "58dd6f7b-b0be-4552-8aec-20e872e5d7f8")
 	)
-	(no_connect
-		(at 128.27 97.79)
-		(uuid "e6707277-074f-4f4b-8b07-2bf826da5d9b")
-	)
 	(wire
 		(pts
 			(xy 160.02 73.66) (xy 160.02 85.09)
@@ -720,7 +716,17 @@
 		)
 		(uuid "fc0a3cfd-388c-437b-a231-c00615cb676e")
 	)
-	(global_label "SDA0"
+	(text "0x76"
+		(exclude_from_sim no)
+		(at 130.048 99.314 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9cfffbb7-6e9e-4e74-b1ba-c259098bfb4c")
+	)
+	(global_label "SDA2"
 		(shape input)
 		(at 128.27 95.25 180)
 		(fields_autoplaced yes)
@@ -742,7 +748,7 @@
 			)
 		)
 	)
-	(global_label "SCL0"
+	(global_label "SCL2"
 		(shape input)
 		(at 128.27 92.71 180)
 		(fields_autoplaced yes)
@@ -826,6 +832,73 @@
 			(project "STM32_Flight_Computer"
 				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93/6385d2e5-860d-4872-95dc-7fa1940dbd05"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cbbf23c-7958-4a22-8975-49de46256a00")
+		(property "Reference" "#PWR080"
+			(at 121.92 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75848728-9a13-4210-9fc7-dd655f4ed5ef")
+		)
+		(instances
+			(project "STM32_Flight_Computer"
+				(path "/0f7e02ee-5e4c-4ec0-84f8-a7bba184df93/6385d2e5-860d-4872-95dc-7fa1940dbd05"
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)

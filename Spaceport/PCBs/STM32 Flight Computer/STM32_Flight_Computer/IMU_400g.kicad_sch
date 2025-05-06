@@ -775,13 +775,15 @@
 		(color 0 0 0 0)
 		(uuid "d6273a9d-96a8-4b68-a6dd-4828587dfd7a")
 	)
+	(junction
+		(at 130.81 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9870fa4-486a-4c6f-884e-6b60589c88fd")
+	)
 	(no_connect
 		(at 167.64 83.82)
 		(uuid "ad641ab2-7cbe-498f-9c74-ccbeaf9658d0")
-	)
-	(no_connect
-		(at 132.08 81.28)
-		(uuid "b1755b5f-693a-4f24-b74c-67942ae385d7")
 	)
 	(no_connect
 		(at 167.64 81.28)
@@ -806,6 +808,16 @@
 			(type default)
 		)
 		(uuid "04833528-7ff3-4e64-a5d1-b3fbae06abaf")
+	)
+	(wire
+		(pts
+			(xy 132.08 81.28) (xy 130.81 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b45871-ed11-4d4f-9925-384525a64124")
 	)
 	(wire
 		(pts
@@ -886,6 +898,16 @@
 			(type default)
 		)
 		(uuid "61db4b65-a89e-4407-ba72-8b58a98fd0c8")
+	)
+	(wire
+		(pts
+			(xy 130.81 81.28) (xy 130.81 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7911523c-b0f5-4557-a0e1-6e2bcbd9a51e")
 	)
 	(wire
 		(pts
@@ -1017,7 +1039,17 @@
 		)
 		(uuid "db061cf5-7e71-418d-88ec-6c9f81dbe821")
 	)
-	(global_label "SDA0"
+	(text "0x19"
+		(exclude_from_sim no)
+		(at 127.508 81.534 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "35e48e59-2c64-4494-ae23-f746309c15b4")
+	)
+	(global_label "SDA2"
 		(shape input)
 		(at 132.08 76.2 180)
 		(fields_autoplaced yes)
@@ -1039,7 +1071,7 @@
 			)
 		)
 	)
-	(global_label "SCL0"
+	(global_label "SCL2"
 		(shape input)
 		(at 132.08 73.66 180)
 		(fields_autoplaced yes)
