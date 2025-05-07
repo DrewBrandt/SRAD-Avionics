@@ -6961,7 +6961,7 @@
 	)
 	(rectangle
 		(start 25.4 132.08)
-		(end 63.5 175.26)
+		(end 63.5 182.88)
 		(stroke
 			(width 0.25)
 			(type dash)
@@ -7541,12 +7541,6 @@
 		(uuid "d07edb0f-68a1-4380-9b7c-77ee01ea1380")
 	)
 	(junction
-		(at 102.87 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d540c77c-4043-4a69-9488-f2540d822b25")
-	)
-	(junction
 		(at 198.12 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7777,16 +7771,6 @@
 			(type default)
 		)
 		(uuid "0d57df81-927c-4eb9-bfb2-9915476ba550")
-	)
-	(wire
-		(pts
-			(xy 41.91 146.05) (xy 46.99 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e484146-4b63-4040-b74a-a6fc0c0add33")
 	)
 	(wire
 		(pts
@@ -8090,6 +8074,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 146.05) (xy 46.99 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "369bef5d-6a3b-4594-b850-59db03d113d4")
+	)
+	(wire
+		(pts
 			(xy 223.52 129.54) (xy 227.33 129.54)
 		)
 		(stroke
@@ -8190,16 +8184,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 45.72) (xy 102.87 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47ab5ed4-ab5b-4dab-a663-d594f1bfda73")
-	)
-	(wire
-		(pts
 			(xy 213.36 74.93) (xy 213.36 76.2)
 		)
 		(stroke
@@ -8257,6 +8241,16 @@
 			(type default)
 		)
 		(uuid "52f37c1e-2f9b-4e8a-80d6-78ab88ab9039")
+	)
+	(wire
+		(pts
+			(xy 73.66 45.72) (xy 85.09 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "535ad508-6fcb-4fe6-a9c9-e2649b1a2fa4")
 	)
 	(wire
 		(pts
@@ -8487,6 +8481,16 @@
 			(type default)
 		)
 		(uuid "73b685d3-fa4e-4675-b36f-ecf6bf176abb")
+	)
+	(wire
+		(pts
+			(xy 41.91 176.53) (xy 46.99 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7576f5bd-c0fe-4d77-9d2d-fa00249cd8a1")
 	)
 	(wire
 		(pts
@@ -8950,7 +8954,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 50.8) (xy 102.87 45.72)
+			(xy 102.87 43.18) (xy 102.87 50.8)
 		)
 		(stroke
 			(width 0)
@@ -9177,16 +9181,6 @@
 			(type default)
 		)
 		(uuid "c23fa43f-a926-493d-aa4c-738cb35cb0ba")
-	)
-	(wire
-		(pts
-			(xy 73.66 45.72) (xy 102.87 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c25fd2cf-41dc-4276-ba52-da8e6fb24ad5")
 	)
 	(wire
 		(pts
@@ -9988,6 +9982,16 @@
 		)
 		(uuid "593f9fa4-56f6-4b4c-8dd3-463e3aaf6e0e")
 	)
+	(label "DPWR5"
+		(at 41.91 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a3f3ed0-b7ea-4920-8e21-4871d7d84001")
+	)
 	(label "BAT_STAT_1"
 		(at 133.35 132.08 0)
 		(effects
@@ -10029,12 +10033,12 @@
 		(uuid "67934680-ca87-4c4c-a440-ac08038113c7")
 	)
 	(label "SD_CLK"
-		(at 77.47 45.72 0)
+		(at 85.09 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "68470148-d7e5-402e-98f8-0e27b434e887")
 	)
@@ -10258,13 +10262,13 @@
 		)
 		(uuid "93430f4d-fc03-4475-bd4d-26da7e70481b")
 	)
-	(label "DPWR"
-		(at 46.99 146.05 180)
+	(label "DPWR3"
+		(at 41.91 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "93d1f72e-b4ef-450f-9305-810e5d8eb75b")
 	)
@@ -10821,6 +10825,71 @@
 			(project "ESP32 Ground Station"
 				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 34.29 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0baee058-4bb6-4aff-8338-def7e7a233ee")
+		(property "Reference" "#PWR057"
+			(at 34.29 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 34.036 172.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 34.29 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1c694b9-1a45-4a2a-8a4a-db6257c6c56f")
+		)
+		(instances
+			(project "ESP32 Ground Station"
+				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -11489,6 +11558,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 54.61 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a263f0-e583-487a-a625-5c8b929ce1b7")
+		(property "Reference" "#PWR058"
+			(at 54.61 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ea9303c-62e4-42e0-af69-feea23da2fb3")
+		)
+		(instances
+			(project "ESP32 Ground Station"
+				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 60.96 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12087,6 +12223,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 38.1 176.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3934d96b-fa85-48cc-a54b-625329854827")
+		(property "Reference" "R22"
+			(at 38.354 180.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k"
+			(at 38.1 178.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 38.1 174.752 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e6b62b4c-55d3-4958-b90d-1f1ffc8db0ac")
+		)
+		(pin "1"
+			(uuid "0f9a37ef-25ba-4daf-9f6f-56c9ba393ccf")
+		)
+		(instances
+			(project "ESP32 Ground Station"
+				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 254 91.44 0)
 		(unit 1)
@@ -12179,7 +12382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MEM2085:GCT_MEM2085-00-115-00-A_REV0.2"
+		(property "Footprint" "MEM2085:microSD-GCT_MEM2085-00-115-00-A_REV0.2"
 			(at -1.27 27.94 0)
 			(effects
 				(font
@@ -13222,7 +13425,7 @@
 				)
 			)
 		)
-		(property "Value" "PWR"
+		(property "Value" "PWR3"
 			(at 50.8 148.59 0)
 			(effects
 				(font
@@ -16953,6 +17156,82 @@
 			(project "ESP32 Ground Station"
 				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 50.8 176.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d55d7061-a796-47c6-a5e3-4105279c72c2")
+		(property "Reference" "D7"
+			(at 50.8 180.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR5"
+			(at 50.8 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 50.8 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 50.8 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 50.8 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50a93a7f-e30d-4028-85fc-435afeacf095")
+		)
+		(pin "2"
+			(uuid "7272567f-39a2-4db2-bec4-af6c49b60908")
+		)
+		(instances
+			(project "ESP32 Ground Station"
+				(path "/238d5a10-52c4-4bd4-b986-5b9918d8bcd7"
+					(reference "D7")
 					(unit 1)
 				)
 			)
