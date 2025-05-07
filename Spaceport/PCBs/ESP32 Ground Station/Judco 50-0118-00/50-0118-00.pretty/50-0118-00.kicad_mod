@@ -96,7 +96,7 @@
 		(remove_unused_layers no)
 		(uuid "80d48fa8-2a21-470a-ba97-ee405e82f74a")
 	)
-	(pad "1" thru_hole oval
+	(pad "2" thru_hole oval
 		(at 3.5 0)
 		(size 2 1.2)
 		(drill oval 1.3 0.6)
@@ -105,4 +105,15 @@
 		(uuid "acb2b565-ea56-4e11-b7f2-743a33227461")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/Judco 50-0118-00/Judco 50-0118-00.step"
+		(offset
+			(xyz 0 7.8 3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
