@@ -1,8 +1,9 @@
-(footprint "GCT_MEM2085-00-115-00-A_REV0.2"
+(footprint "microSD-GCT_MEM2085-00-115-00-A_REV0.2"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
+	(tags "microSD")
 	(property "Reference" "REF**"
 		(at -3.025 -6.785 0)
 		(layer "F.SilkS")
